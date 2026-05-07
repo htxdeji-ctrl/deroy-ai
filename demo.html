@@ -426,19 +426,13 @@
       <h1 class="form-title">See the AI<br>in action.</h1>
       <p class="form-sub">Pick a time that works for you. We&rsquo;ll walk you through a live demo tailored to your business &mdash; no pitch, no pressure.</p>
 
-      <div class="fields-row">
-        <div class="field">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="fname" placeholder="Jane" required>
-        </div>
-        <div class="field">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lname" placeholder="Smith" required>
-        </div>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
       </div>
       <div class="field">
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required>
+        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
       </div>
       <div class="fields-row">
         <div class="field">
@@ -450,54 +444,17 @@
           <input type="text" id="business" name="business" placeholder="Your Business LLC" required>
         </div>
       </div>
-      <div class="field">
-        <label for="industry">Industry</label>
-        <select id="industry" name="industry" required>
-          <option value="" disabled selected>Select your industry&hellip;</option>
-          <option>Healthcare / Medical</option>
-          <option>Legal</option>
-          <option>Real Estate</option>
-          <option>Home Services / HVAC</option>
-          <option>Dental</option>
-          <option>Finance / Insurance</option>
-          <option>Retail / E-commerce</option>
-          <option>Restaurant / Hospitality</option>
-          <option>Other</option>
-        </select>
-      </div>
 
       <hr class="divider">
 
-      <!-- CALENDAR PICKER -->
-      <div class="calendar-section">
-        <span class="calendar-label">Choose a Meeting Date</span>
-        <div class="cal-nav">
-          <button class="cal-nav-btn" onclick="prevMonth()">&larr;</button>
-          <span class="cal-month-label" id="cal-month-label"></span>
-          <button class="cal-nav-btn" onclick="nextMonth()">&rarr;</button>
+      <div class="fields-row">
+        <div class="field">
+          <label for="meeting-date">Preferred Meeting Date</label>
+          <input type="date" id="meeting-date" name="meeting-date" required>
         </div>
-        <div class="calendar-grid" id="calendar-grid">
-          <div class="cal-header">Su</div>
-          <div class="cal-header">Mo</div>
-          <div class="cal-header">Tu</div>
-          <div class="cal-header">We</div>
-          <div class="cal-header">Th</div>
-          <div class="cal-header">Fr</div>
-          <div class="cal-header">Sa</div>
-        </div>
-        <div class="selected-date-display" id="selected-date-display"></div>
-
-        <span class="calendar-label" style="margin-top:4px;">Preferred Time Slot</span>
-        <div class="time-slots" id="time-slots">
-          <div class="time-slot" data-time="9:00 AM" onclick="selectTime(this)">9:00 AM</div>
-          <div class="time-slot" data-time="10:00 AM" onclick="selectTime(this)">10:00 AM</div>
-          <div class="time-slot" data-time="11:00 AM" onclick="selectTime(this)">11:00 AM</div>
-          <div class="time-slot" data-time="12:00 PM" onclick="selectTime(this)">12:00 PM</div>
-          <div class="time-slot" data-time="1:00 PM" onclick="selectTime(this)">1:00 PM</div>
-          <div class="time-slot" data-time="2:00 PM" onclick="selectTime(this)">2:00 PM</div>
-          <div class="time-slot" data-time="3:00 PM" onclick="selectTime(this)">3:00 PM</div>
-          <div class="time-slot" data-time="4:00 PM" onclick="selectTime(this)">4:00 PM</div>
-          <div class="time-slot" data-time="5:00 PM" onclick="selectTime(this)">5:00 PM</div>
+        <div class="field">
+          <label for="meeting-time">Preferred Time</label>
+          <input type="time" id="meeting-time" name="meeting-time" required>
         </div>
       </div>
 
